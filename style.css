@@ -36,8 +36,6 @@
     .w3-grid-template {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
-
-
    }
     .w3-image {
     width: auto;

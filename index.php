@@ -48,7 +48,6 @@ function subString($str)
         return $str;
     }
 }
-
 ?>
 
 <!DOCTYPE html>
@@ -65,9 +64,7 @@ function subString($str)
 <script src="script.js"></script>
 
 <body>
-
     <!-- Top menu -->
-    <!-- <div class="w3-center w3-content w3-padding"> -->
     <div class="w3-header w3-container w3-padding-64 w3-center w3-brown">
         <h1 style="font-size:calc(10px + 4vw);">NIMS CHOCO TUB</h1>
         <p style="font-size:calc(8px + 1vw);">"Nims Only The Best"</p>
@@ -127,6 +124,50 @@ function subString($str)
     echo "</center>";
     echo "</div>";
     ?>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top"class="fa fa-angle-double-up" style="font-size:36px"></button>
+    <style>
+    #myBtn {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        z-index: 99;
+        font-size: 18px;
+        border: none;
+        outline: none;
+        background-color: white;
+        color: black;
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 4px;
+    }
+    
+    #myBtn:hover {
+        background-color: #555;
+    }
+    </style>
+    <script>
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
+    }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+    }
+    </script>
 
     <footer class="w3-row-padding w3-padding-32">
         <hr></hr>
