@@ -48,6 +48,7 @@ function subString($str)
         return $str;
     }
 }
+//
 ?>
 
 <!DOCTYPE html>
