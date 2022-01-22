@@ -67,15 +67,14 @@ function subString($str)
         <h1 style="font-size:calc(10px + 4vw);">NIMS CHOCO TUB</h1>
         <p style="font-size:calc(8px + 1vw);">"Nims Only The Best"</p>
     </div>
-
-    <div class="w3-container w3-center w3-xlarge"><p><b>Welcome Guest</b> </p></div>
+    <div class="w3-container w3-center w3-xlarge"><p><b>Nims Choco Tub Agent List</b> </p></div>
     <div class="w3-container w3-card w3-padding w3-row w3-round" style="width:100%">
         <form class="w3-container" action="index.php" method="get">
             <div class="w3-twothird"><input class="w3-input w3-border w3-round w3-center" placeholder = "Enter your search term here" type="text" name="search"></div>
-            <div class="w3-third"><input class="w3-input w3-border w3-brown w3-round" type="submit" name="submit" value="search"></div>
+            <div class="w3-third"><input class="w3-input w3-border w3-brown w3-round" type="submit" name="submit" value="search"><br></b></div>
         </form>
     </div>
-    <div class="w3-container w3-center w3-xlarge"><p><b>Nims Choco Tub Agent List</b> </p></div>
+
     <div class="w3-grid-template">
          <?php
          foreach ($rows as $agent){
