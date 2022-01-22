@@ -16,11 +16,9 @@ $results_per_page = 10;
         $pageno = (int)$_GET['pageno'];
 
         $page_first_result = ($pageno - 1) * $results_per_page;
-        // $sqlpatients = $sqlpatients . " LIMIT $page_first_result , $results_per_page";
     } else {
         $pageno = 1;
         $page_first_result = ($pageno - 1) * $results_per_page;
-        //  $sqlpatients = $sqlpatients . " LIMIT $page_first_result , $results_per_page";
     }
 
     $stmt = $conn->prepare($sqlquery);
