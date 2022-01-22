@@ -2,8 +2,7 @@
 include_once("dbconnect.php");
 $sqlquery = "SELECT * FROM tbl_agent ORDER BY name ASC";
 
-/*if ($_GET['submit'] == "search")
-{
+if ($_GET['submit'] == "search"){
     $search = $_GET['search'];
     $sqlquery = "SELECT * FROM tbl_agent WHERE name LIKE '%$search%'";
 }
@@ -11,7 +10,6 @@ else
 {
 $sqlquery = "SELECT * FROM tbl_agent";
 }
-*/
 
 $results_per_page = 10;
     if (isset($_GET['pageno'])) {
@@ -167,6 +165,8 @@ function subString($str)
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
     }
+
+   
     </script>
 
     <footer class="w3-row-padding w3-padding-32">
