@@ -2,7 +2,7 @@
 include_once("dbconnect.php");
 $sqlquery = "SELECT * FROM tbl_agent ORDER BY name ASC";
 
-if ($_GET['submit'] == "search"){
+if ($_GET['search'] == "search"){
     $search = $_GET['search'];
     $sqlquery = "SELECT * FROM tbl_agent WHERE name LIKE '%$search%'";
 }
